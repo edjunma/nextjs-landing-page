@@ -40,7 +40,16 @@ export default function ServiceSection() {
     <section sx={{ variant: 'section.services'}}>
       <Container sx={StyleSheet.containerBox}>
         <Box sx={styles.thumbnail}>
-          
+          <Image src={ServiceThumb} alt="Thumbnail" />
+          <Button
+            sx={styles.videoBtn}
+            onClick={handleClick}
+            aria-label="Play Button"
+            >
+            <span>
+              <IoIosPlay />
+            </span>
+            </Button>
         </Box>
       </Container>
     </section>
