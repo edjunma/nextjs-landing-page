@@ -61,7 +61,7 @@ export default function ServiceSection() {
             </Box>
         </Box>
         <Box sx={styles.contentBox}>
-          <TextFeature subTitle={data.subTitle} />
+          <TextFeature subTitle={data.subTitle} title={data.title}/>
         </Box>
       </Container>
     </section>
