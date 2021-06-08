@@ -50,7 +50,13 @@ export default function Feature() {
       <SectionHeader slogan="Quality Features" title="Amazing useful features"/>
       <Grid sx={StyleSheet.grid}>
         {data.map((item) => (
-          <FeatureCard />
+          <FeatureCard 
+            key={item.id}
+            src={item.imgSrc}
+            alt={item.altText}
+            title={item.title}
+            text={item.text}
+          />
         ))}
       </Grid>
     </Container>
