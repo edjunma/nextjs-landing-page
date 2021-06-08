@@ -36,7 +36,15 @@ const data = [
 
 export default function WorkFlow() {
   return (
-    <h1>Workflow</h1>
+    <section sx={styles.workflow}>
+      <Container>
+        <SectionHeader
+          slogan="WHATS THE FUNCTION"
+          title="Meet the feature of our product"
+          isWhite={true}
+        />
+      </Container>
+    </section>
   );
 }
 
