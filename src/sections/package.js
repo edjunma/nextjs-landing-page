@@ -241,9 +241,22 @@ const responsive = {
 
 export default function Package() {
   const { monthly, annual } = packages;
+  const [state, setState] = useState({
+    active: 'monthly',
+    pricingPlan: monthly,
+  })
+
+  const handlePricingPlan = (plan) => {
+    if(plan === 'annual') {
+      setState({
+        active: 'annual',
+        pricingPlan: annual,
+      })
+    }
+  }
 
   const sliderParams = {
-    additionalTransfrom: 0,
+    additionalTransform: 0,
     arrows: false,
     autoPlaySpeed: 3000,
     centerMode: false,
