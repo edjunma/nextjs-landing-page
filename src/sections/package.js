@@ -285,6 +285,16 @@ export default function Package() {
           slogan="Pricing Plan"
           title="Choose your pricing plan"
         />
+
+        <Flex sx={styles.buttonGroup}>
+          <Box sx={styles.buttonGroupInner}>
+            <button
+              className={state.active === 'monthly' ? 'active' : ''}
+              type="button">
+              Monthly Plan
+            </button>
+          </Box>
+        </Flex>
       </Container>
     </section>
   );
