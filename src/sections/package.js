@@ -304,6 +304,11 @@ export default function Package() {
             </button>
           </Box>
         </Flex>
+        <Box sx={styles.pricingWrapper} className="pricing_wrapper">
+          <Carousel>
+            
+          </Carousel>
+        </Box>
       </Container>
     </section>
   );
