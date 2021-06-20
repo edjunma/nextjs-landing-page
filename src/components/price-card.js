@@ -20,7 +20,13 @@ export default function PriceCard({
     >
       {header && <Text sx={styles.header}>{header}</Text>}
       <Box>
-        <Box className="package__header" sx={styles.pricingHeader}></Box>
+        <Box className="package__header" sx={styles.pricingHeader}>
+          <Heading className="package__name" variant="title">
+            {name}
+          </Heading>
+          <Text as="p">{description}</Text>
+        </Box>
+        <List />
       </Box>
     </Card>
   );
