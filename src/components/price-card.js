@@ -27,6 +27,10 @@ export default function PriceCard({
           <Text as="p">{description}</Text>
         </Box>
         <List items={points} childStyle={styles.listStyleType}/>
+        <Text className="package_price" sx={styles.price}>
+          {priceWithUnit}
+          <span>Monthly</span>
+        </Text>
       </Box>
     </Card>
   );
